@@ -1,0 +1,8 @@
+# iniciar prisma no sqlite de modo local
+npx prisma init --datasource-provider SQLite
+
+# Fazer migrações/todas alterações no SQL com o prisma
+npx prisma migrate dev
+
+# Visualizar banco de dados no prisma
+npx prisma studio
