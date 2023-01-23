@@ -33,6 +33,7 @@ export async function appRoutes(app: FastifyInstance) {
         const getDayParams = z.object({
             date: z.coerce.date(),
         });
+        console.log("rota: '/day'");
 
         const { date } = getDayParams.parse(request.query);
 
